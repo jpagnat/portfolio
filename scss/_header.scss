@@ -1,0 +1,41 @@
+@use "vars";
+
+.header {
+  height: 100vh;
+  background-color: vars.$Black;
+  color: vars.$White;
+  .header__presentation {
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    .header__title {
+      font-size: 1.2em;
+      font-weight: 400;
+    }
+    .header__name {
+      color: vars.$Red;
+    }
+    .header__button {
+      text-decoration: none;
+      display: flex;
+      color: vars.$White;
+      background-color: transparent;
+      padding: 12px;
+      margin-top: 16px;
+      font-size: 1.2em;
+      font-weight: 400;
+      border: 2px solid vars.$White;
+      transition: all 0.5s;
+      .header__icon {
+        margin-left: 16px;
+      }
+    }
+    .header__button:hover {
+      cursor: pointer;
+      background-color: vars.$Green;
+      border-color: vars.$Green;
+    }
+  }
+}

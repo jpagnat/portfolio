@@ -1,0 +1,307 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Raleway", sans-serif;
+}
+
+.header {
+  height: 100vh;
+  background-color: #252934;
+  color: #ffffff;
+}
+.header .header__presentation {
+  height: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.header .header__presentation .header__title {
+  font-size: 1.2em;
+  font-weight: 400;
+}
+.header .header__presentation .header__name {
+  color: #e31b6d;
+}
+.header .header__presentation .header__button {
+  text-decoration: none;
+  display: flex;
+  color: #ffffff;
+  background-color: transparent;
+  padding: 12px;
+  margin-top: 16px;
+  font-size: 1.2em;
+  font-weight: 400;
+  border: 2px solid #ffffff;
+  transition: all 0.5s;
+}
+.header .header__presentation .header__button .header__icon {
+  margin-left: 16px;
+}
+.header .header__presentation .header__button:hover {
+  cursor: pointer;
+  background-color: #04c2c9;
+  border-color: #04c2c9;
+}
+
+.nav {
+  background-color: #252934;
+  color: #ffffff;
+}
+.nav .nav__lista {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  height: 60px;
+  border-top: 0.5px solid #04c2c9;
+}
+.nav .nav__lista .nav__item a {
+  text-decoration: none;
+  color: #ffffff;
+}
+.nav .nav__lista .nav__item a:hover {
+  color: #e31b6d;
+  transition: all 0.5s;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-top: 4px solid #04c2c9;
+}
+.about .about__title {
+  font-weight: 700;
+  font-size: 2em;
+  width: 200px;
+  display: inline-block;
+  text-align: center;
+  color: #252934;
+  text-transform: uppercase;
+  border-bottom: 2px solid #252934;
+  margin: 24px 0;
+  padding: 8px 0;
+}
+.about .about__me {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #8d8d8d;
+}
+.about .about__me .me__img {
+  width: 200px;
+  border-radius: 8px;
+}
+.about .about__me .me__question {
+  font-size: 1.5em;
+  margin: 16px 0;
+  font-weight: bold;
+}
+.about .about__me .me__description {
+  font-weight: 400;
+  padding: 0 24px 24px 24px;
+  word-spacing: 2px;
+  letter-spacing: 2px;
+  line-height: 24px;
+  text-align: center;
+  margin-bottom: 24px;
+}
+.about .principios {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+.about .principios .principios__container {
+  color: #8d8d8d;
+  width: 200px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 32px;
+}
+.about .principios .principios__container .principios__icon {
+  background-color: #04c2c9;
+  color: #ffffff;
+  font-size: 3em;
+  padding: 42px;
+  border-radius: 50%;
+  margin-bottom: 8px;
+}
+.about .principios .principios__container .principios__description {
+  margin-top: 8px;
+  text-align: center;
+  font-size: 0.8em;
+}
+.about .stack {
+  width: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin: 8px 0 24px 0;
+}
+.about .stack .stack__icon {
+  width: 120px;
+  color: #8d8d8d;
+  font-size: 4em;
+  padding: 16px;
+}
+.about .stack .stack__icon:hover {
+  color: #04c2c9;
+  transition: all 0.5s;
+}
+
+.work {
+  background-color: #f5f5f5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 24px;
+}
+.work .work__title {
+  font-weight: 700;
+  font-size: 2em;
+  width: 200px;
+  display: inline-block;
+  text-align: center;
+  color: #252934;
+  text-transform: uppercase;
+  border-bottom: 2px solid #252934;
+  margin: 24px 0;
+  padding: 8px 0;
+}
+.work .work__element {
+  width: 400px;
+  height: 200px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  margin: 8px;
+}
+
+.contact {
+  background-color: #252934;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding-bottom: 32px;
+}
+.contact .contact__title {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 2em;
+  width: 200px;
+  display: inline-block;
+  text-align: center;
+  text-transform: uppercase;
+  border-bottom: 2px solid #ffffff;
+  margin: 24px 0;
+  padding: 8px 0;
+}
+.contact .contact__question {
+  color: #04c2c9;
+}
+.contact .contact__form {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin-top: 32px;
+}
+.contact .contact__form .form__input {
+  color: #ffffff;
+  background-color: #1e242c;
+  font-size: 1em;
+  margin: 4px;
+  border: none;
+  padding: 8px;
+}
+.contact .contact__form .form__textarea {
+  color: #ffffff;
+  font-family: "Raleway", sans-serif;
+  font-size: 1em;
+  background-color: #1e242c;
+  margin: 4px;
+  border: none;
+  padding: 8px;
+}
+.contact .contact__form .form__btn {
+  color: #ffffff;
+  background-color: transparent;
+  padding: 12px;
+  margin-top: 16px;
+  font-size: 1.2em;
+  font-weight: 100;
+  border: 2px solid #ffffff;
+  transition: all 0.5s;
+}
+.contact .contact__form .form__btn:hover {
+  cursor: pointer;
+  background-color: #04c2c9;
+  border-color: #04c2c9;
+}
+
+#msg-enviado {
+  background-color: #e31b6d;
+  color: #ffffff;
+  padding: 1em;
+  margin-top: 8px;
+  text-align: center;
+  width: 100%;
+}
+
+.hidden {
+  display: none;
+}
+
+.footer {
+  background-color: #1b242f;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.footer .footer__up {
+  display: none;
+}
+.footer .footer__redes {
+  font-size: 1.8em;
+}
+.footer .footer__redes a {
+  text-decoration: none;
+  color: #ffffff;
+}
+.footer .footer__redes .redes__item {
+  background-color: #262f38;
+  margin: 16px;
+  padding: 16px;
+  transition: all 0.5s;
+}
+.footer .footer__redes .redes__item:hover {
+  background-color: #04c2c9;
+}
+.footer .footer__name {
+  color: #8d8d8d;
+  margin-top: 24px;
+  padding-bottom: 24px;
+  text-transform: uppercase;
+}
+.footer .footer__name span {
+  color: #e31b6d;
+}
+
+/*# sourceMappingURL=style.css.map */

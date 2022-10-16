@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Julian Pagnat | Dev</title>
+  </head>
+  <body>
+    <header class="header" id="home">
+      <div class="header__presentation">
+        <h1 class="header__title">
+          Hola, mi nombre es <span class="header__name">Julián Pagnat</span>.
+          <br />
+          Soy un desarrollador Front End
+        </h1>
+        <a class="header__button" href="#nav">
+          Mira mi Portfolio
+          <i class="header__icon fa-solid fa-arrow-right"></i>
+        </a>
+
+        <a
+          class="header__button"
+          href="./assets/PagnatJulianCV.pdf"
+          download="PagnatJulianCV.pdf"
+          target="_blank"
+        >
+          Descarga mi CV
+          <i class="header__icon fa-solid fa-download"></i>
+        </a>
+      </div>
+    </header>
+
+    <nav class="nav" id="nav">
+      <ul class="nav__lista">
+        <li class="nav__item"><a href="#home">Home</a></li>
+        <li class="nav__item"><a href="#about">Sobre mi</a></li>
+        <li class="nav__item"><a href="#work">Proyectos</a></li>
+        <li class="nav__item"><a href="#contact">Contacto</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <section class="about" id="about">
+        <h2 class="about__title">Sobre mi</h2>
+        <div class="about__me">
+          <img class="me__img" src="./img/pruebaYo.jpg" alt="julian-pagnat" />
+          <h3 class="me__question">¿Quién soy?</h3>
+          <p class="me__description">
+            Soy Julian, tengo 27 años y vivo hace poco en la ciudad de Madrid.
+            <br />
+            En estos ultimos años comence mis estudios como desarrollador front
+            end.
+            <br />
+            Estoy finalizando una Tecnicatura Superior en Programacion y
+            realizando el Certified Tech Developer de Digital House en
+            colaboracion con Mercado Libre y Globant.
+            <br />
+            A continuacion podes ver mis principios y mi stack de tecnologias.
+            <br />
+            Espero poder sumar mas en el futuro.
+          </p>
+        </div>
+        <div class="stack"></div>
+
+        <div class="principios">
+          <div class="principios__container">
+            <i class="principios__icon fa-solid fa-tower-broadcast"></i>
+            <h3 class="principios__title">Rapido</h3>
+            <p class="principios__description">
+              Tiempos de carga rapidos e interaccion sin demoras, maxima
+              prioridad
+            </p>
+          </div>
+          <div class="principios__container">
+            <i class="principios__icon fa-regular fa-lightbulb"></i>
+            <h3 class="principios__title">Intuitivo</h3>
+            <p class="principios__description">
+              Preferencia por una UX/UI intuitiva y facil de usar
+            </p>
+          </div>
+          <div class="principios__container">
+            <i class="principios__icon fa-solid fa-mobile-screen"></i>
+            <h3 class="principios__title">Responsive</h3>
+            <p class="principios__description">
+              Mis diseños funcionan en cualquier dispositivo, grande o pequeño
+            </p>
+          </div>
+          <div class="principios__container">
+            <i class="principios__icon fa-solid fa-rocket"></i>
+            <h3 class="principios__title">Dinamico</h3>
+            <p class="principios__description">
+              Los sitios web no deben ser estaticos, me encanta hacer que las
+              paginas cobren vida
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="work" id="work">
+        <h2 class="work__title">Proyectos</h2>
+        <div class="work__projects"></div>
+      </section>
+
+      <section class="contact" id="contact">
+        <h2 class="contact__title">Contacto</h2>
+        <p class="contact__question">¿Tenes alguna pregunta?</p>
+
+        <form
+          class="contact__form"
+          action="https://formspree.io/f/xknezlez"
+          method="POST"
+          id="form"
+        >
+          <input
+            class="form__input"
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Nombre"
+            required
+          />
+          <input
+            class="form__input"
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Ingrese su correo electronico"
+            required
+          />
+          <textarea
+            class="form__textarea"
+            name="message"
+            id="message"
+            placeholder="Dejame un mensaje!"
+            cols="30"
+            rows="5"
+            required
+          ></textarea>
+          <button class="form__btn" id="contact-btn" type="submit">Send</button>
+          <p class="hidden" id="msg-enviado">
+            Mensaje enviado, te respondere a la brevedad!
+          </p>
+        </form>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__up">
+        <i class="fa-solid fa-chevron-up"></i>
+      </div>
+      <div class="footer__redes">
+        <a href="https://www.linkedin.com/in/julianpagnat/" target="_blank">
+          <i class="redes__item fa-brands fa-linkedin"></i>
+        </a>
+        <a href="https://www.instagram.com/julipagnat/" target="_blank">
+          <i class="redes__item fa-brands fa-instagram"></i>
+        </a>
+        <a href="https://github.com/jpagnat" target="_blank">
+          <i class="redes__item fa-brands fa-github"></i>
+        </a>
+      </div>
+      <p class="footer__name">Julian Pagnat <span>©2022</span></p>
+    </footer>
+
+    <script src="./js/stack.js"></script>
+    <script src="./js/work.js"></script>
+    <script src="./js/contact.js"></script>
+  </body>
+</html>

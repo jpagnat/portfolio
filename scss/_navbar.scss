@@ -1,0 +1,24 @@
+@use "vars";
+
+.nav {
+  background-color: vars.$Black;
+  color: vars.$White;
+  .nav__lista {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    height: 60px;
+    border-top: 0.5px solid vars.$Green;
+    .nav__item {
+      a {
+        text-decoration: none;
+        color: vars.$White;
+      }
+      a:hover {
+        color: vars.$Red;
+        transition: all 0.5s;
+      }
+    }
+  }
+}

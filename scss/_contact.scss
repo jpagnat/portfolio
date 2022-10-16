@@ -1,0 +1,77 @@
+@use "vars";
+
+.contact {
+  background-color: vars.$Black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding-bottom: 32px;
+  .contact__title {
+    color: vars.$White;
+    font-weight: 700;
+    font-size: 2em;
+    width: 200px;
+    display: inline-block;
+    text-align: center;
+    text-transform: uppercase;
+    border-bottom: 2px solid vars.$White;
+    margin: 24px 0;
+    padding: 8px 0;
+  }
+  .contact__question {
+    color: vars.$Green;
+  }
+  .contact__form {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin-top: 32px;
+    .form__input {
+      color: vars.$White;
+      background-color: vars.$Bg-Contact;
+      font-size: 1em;
+      margin: 4px;
+      border: none;
+      padding: 8px;
+    }
+    .form__textarea {
+      color: vars.$White;
+      font-family: "Raleway", sans-serif;
+      font-size: 1em;
+      background-color: vars.$Bg-Contact;
+      margin: 4px;
+      border: none;
+      padding: 8px;
+    }
+    .form__btn {
+      color: vars.$White;
+      background-color: transparent;
+      padding: 12px;
+      margin-top: 16px;
+      font-size: 1.2em;
+      font-weight: 100;
+      border: 2px solid vars.$White;
+      transition: all 0.5s;
+    }
+    .form__btn:hover {
+      cursor: pointer;
+      background-color: vars.$Green;
+      border-color: vars.$Green;
+    }
+  }
+}
+
+#msg-enviado {
+  background-color: vars.$Red;
+  color: vars.$White;
+  padding: 1em;
+  margin-top: 8px;
+  text-align: center;
+  width: 100%;
+}
+
+.hidden {
+  display: none;
+}
