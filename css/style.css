@@ -131,34 +131,38 @@ html {
   align-items: center;
   margin-bottom: 32px;
 }
-.about .principios .principios__container .principios__icon {
-  background-color: #04c2c9;
-  color: #ffffff;
-  font-size: 3em;
-  padding: 42px;
+.about .principios .principios__container .container__icon {
+  color: #04c2c9;
   border-radius: 50%;
   margin-bottom: 8px;
+}
+.about .principios .principios__container .container__icon .principios__icon {
+  font-size: 5em;
+  padding: 32px;
 }
 .about .principios .principios__container .principios__description {
   margin-top: 8px;
   text-align: center;
   font-size: 0.8em;
 }
-.about .stack {
-  width: 400px;
+.about .stack__container {
+  margin-bottom: 40px;
+}
+.about .stack__container .stack {
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: flex-start;
   flex-wrap: wrap;
-  margin: 8px 0 24px 0;
 }
-.about .stack .stack__icon {
-  width: 120px;
+.about .stack__container .stack .stack__icon {
+  width: 30%;
   color: #8d8d8d;
   font-size: 4em;
   padding: 16px;
+  text-align: center;
 }
-.about .stack .stack__icon:hover {
+.about .stack__container .stack .stack__icon:hover {
   color: #04c2c9;
   transition: all 0.5s;
 }
@@ -183,13 +187,72 @@ html {
   margin: 24px 0;
   padding: 8px 0;
 }
-.work .work__element {
-  width: 400px;
+.work .work__projects {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.card {
+  width: 300px;
   height: 200px;
+  float: left;
+  perspective: 500px;
+}
+.card .content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  transition: transform 1s;
+  transform-style: preserve-3d;
+}
+.card .content .front {
   background-repeat: no-repeat;
-  background-size: contain;
   background-position: center;
-  margin: 8px;
+  background-size: contain;
+}
+.card .content .back {
+  background: #252934;
+  color: #ffffff;
+  transform: rotateY(180deg);
+}
+.card .content .back .back__title {
+  font-size: 2em;
+  padding-top: 16px;
+}
+.card .content .back .back__description {
+  font-size: 1em;
+}
+.card .content .back .back__a {
+  font-size: 1em;
+  margin-top: 24px;
+}
+.card .content .back .back__a a {
+  text-decoration: none;
+  border: 2px solid #ffffff;
+  color: #ffffff;
+  padding: 8px;
+}
+.card .content .back .back__tecnologias {
+  margin-top: 8px;
+  font-size: 0.8em;
+}
+
+.card:hover .content {
+  transform: rotateY(180deg);
+  transition: transform 0.5s;
+}
+
+.front,
+.back {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: white;
+  text-align: center;
+  border-radius: 5px;
+  backface-visibility: hidden;
 }
 
 .contact {
