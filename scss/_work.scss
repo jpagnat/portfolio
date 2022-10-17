@@ -25,6 +25,9 @@
     gap: 8px;
     @media (min-width: 1440px) {
       flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
     }
   }
 }

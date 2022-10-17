@@ -9,8 +9,12 @@ ScrollReveal().reveal(headerName, {
 });
 
 //Links
-const links = document.querySelectorAll("a");
-console.log(links);
+const links = document.querySelectorAll(".nav ul li a");
+const linkFooter = document.querySelector(".footer__up a");
+const linkHeader = document.querySelector(".header a");
+
+linkFooter.addEventListener("click", clickHandler);
+linkHeader.addEventListener("click", clickHandler);
 
 for (const link of links) {
   link.addEventListener("click", clickHandler);

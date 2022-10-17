@@ -105,6 +105,10 @@ html {
   flex-direction: column;
   color: #8d8d8d;
 }
+.about .about__me a {
+  color: #04c2c9;
+  text-decoration: none;
+}
 .about .about__me .me__img {
   width: 200px;
   border-radius: 8px;
@@ -209,14 +213,27 @@ html {
 @media (min-width: 1440px) {
   .work .work__projects {
     flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
   }
 }
 
 .card {
   width: 300px;
-  height: 200px;
+  height: 170px;
   float: left;
   perspective: 500px;
+  margin-bottom: 24px;
+}
+@media (min-width: 1440px) {
+  .card {
+    width: 400px;
+    height: 230px;
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-bottom: 32px;
+  }
 }
 .card .content {
   position: relative;
@@ -230,6 +247,7 @@ html {
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
+  background-color: #04c2c9;
 }
 .card .content .back {
   background: #252934;
@@ -372,14 +390,14 @@ html {
 }
 .footer .footer__up {
   position: absolute;
-  top: -22px;
+  top: -10px;
+  cursor: pointer;
+}
+.footer .footer__up a {
   padding: 16px;
   border-radius: 45%;
   background-color: #ffffff;
   transition: all 0.5s;
-  cursor: pointer;
-}
-.footer .footer__up a {
   text-decoration: none;
   color: #252934;
 }
@@ -389,6 +407,7 @@ html {
 }
 .footer .footer__up:hover {
   background-color: #04c2c9;
+  color: #ffffff;
 }
 .footer .footer__redes {
   font-size: 1.8em;

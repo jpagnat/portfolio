@@ -10,13 +10,13 @@
   position: relative;
   .footer__up {
     position: absolute;
-    top: -22px;
-    padding: 16px;
-    border-radius: 45%;
-    background-color: vars.$White;
-    transition: all 0.5s;
+    top: -10px;
     cursor: pointer;
     a {
+      padding: 16px;
+      border-radius: 45%;
+      background-color: vars.$White;
+      transition: all 0.5s;
       text-decoration: none;
       color: vars.$Black;
     }
@@ -27,6 +27,7 @@
   }
   .footer__up:hover {
     background-color: vars.$Green;
+    color: vars.$White;
   }
   .footer__redes {
     font-size: 1.8em;
