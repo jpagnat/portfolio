@@ -28,6 +28,10 @@
     flex-direction: column;
     width: 80%;
     margin-top: 32px;
+    padding-bottom: 24px;
+    @media (min-width: 1440px) {
+      width: 600px;
+    }
     .form__input {
       color: vars.$White;
       background-color: vars.$Bg-Contact;

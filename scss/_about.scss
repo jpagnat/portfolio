@@ -5,8 +5,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border-top: 4px solid vars.$Green;
-
   .about__title {
     font-weight: 700;
     font-size: 2em;
@@ -39,9 +37,12 @@
       padding: 0 24px 24px 24px;
       word-spacing: 2px;
       letter-spacing: 2px;
-      line-height: 24px;
       text-align: center;
       margin-bottom: 24px;
+      @media (min-width: 1440px) {
+        width: 900px;
+        line-height: 32px;
+      }
     }
   }
   .principios {

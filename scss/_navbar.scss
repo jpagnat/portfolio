@@ -2,6 +2,7 @@
 
 .nav {
   background-color: vars.$Black;
+  border-bottom: 4px solid vars.$Green;
   color: vars.$White;
   .nav__lista {
     display: flex;
@@ -14,6 +15,7 @@
       a {
         text-decoration: none;
         color: vars.$White;
+        text-transform: uppercase;
       }
       a:hover {
         color: vars.$Red;
@@ -21,4 +23,11 @@
       }
     }
   }
+}
+
+.sticky {
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  width: 100%;
 }

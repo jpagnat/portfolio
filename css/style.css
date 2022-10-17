@@ -20,6 +20,7 @@ html {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  text-align: center;
 }
 .header .header__presentation .header__title {
   font-size: 1.2em;
@@ -51,6 +52,7 @@ html {
 
 .nav {
   background-color: #252934;
+  border-bottom: 4px solid #04c2c9;
   color: #ffffff;
 }
 .nav .nav__lista {
@@ -64,10 +66,18 @@ html {
 .nav .nav__lista .nav__item a {
   text-decoration: none;
   color: #ffffff;
+  text-transform: uppercase;
 }
 .nav .nav__lista .nav__item a:hover {
   color: #e31b6d;
   transition: all 0.5s;
+}
+
+.sticky {
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  width: 100%;
 }
 
 .about {
@@ -75,7 +85,6 @@ html {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border-top: 4px solid #04c2c9;
 }
 .about .about__title {
   font-weight: 700;
@@ -110,9 +119,14 @@ html {
   padding: 0 24px 24px 24px;
   word-spacing: 2px;
   letter-spacing: 2px;
-  line-height: 24px;
   text-align: center;
   margin-bottom: 24px;
+}
+@media (min-width: 1440px) {
+  .about .about__me .me__description {
+    width: 900px;
+    line-height: 32px;
+  }
 }
 .about .principios {
   display: flex;
@@ -192,6 +206,11 @@ html {
   flex-direction: column;
   gap: 8px;
 }
+@media (min-width: 1440px) {
+  .work .work__projects {
+    flex-direction: row;
+  }
+}
 
 .card {
   width: 300px;
@@ -233,6 +252,11 @@ html {
   border: 2px solid #ffffff;
   color: #ffffff;
   padding: 8px;
+}
+.card .content .back .back__a a:hover {
+  color: #e31b6d;
+  border-color: #e31b6d;
+  transition: all 0.5s;
 }
 .card .content .back .back__tecnologias {
   margin-top: 8px;
@@ -284,6 +308,12 @@ html {
   flex-direction: column;
   width: 80%;
   margin-top: 32px;
+  padding-bottom: 24px;
+}
+@media (min-width: 1440px) {
+  .contact .contact__form {
+    width: 600px;
+  }
 }
 .contact .contact__form .form__input {
   color: #ffffff;
@@ -337,9 +367,28 @@ html {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-top: 64px;
+  position: relative;
 }
 .footer .footer__up {
-  display: none;
+  position: absolute;
+  top: -22px;
+  padding: 16px;
+  border-radius: 45%;
+  background-color: #ffffff;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+.footer .footer__up a {
+  text-decoration: none;
+  color: #252934;
+}
+.footer .footer__up a:hover {
+  background-color: #04c2c9;
+  color: #ffffff;
+}
+.footer .footer__up:hover {
+  background-color: #04c2c9;
 }
 .footer .footer__redes {
   font-size: 1.8em;

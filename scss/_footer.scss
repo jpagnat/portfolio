@@ -6,8 +6,27 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-top: 64px;
+  position: relative;
   .footer__up {
-    display: none;
+    position: absolute;
+    top: -22px;
+    padding: 16px;
+    border-radius: 45%;
+    background-color: vars.$White;
+    transition: all 0.5s;
+    cursor: pointer;
+    a {
+      text-decoration: none;
+      color: vars.$Black;
+    }
+    a:hover {
+      background-color: vars.$Green;
+      color: vars.$White;
+    }
+  }
+  .footer__up:hover {
+    background-color: vars.$Green;
   }
   .footer__redes {
     font-size: 1.8em;

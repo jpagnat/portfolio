@@ -40,6 +40,11 @@
           color: vars.$White;
           padding: 8px;
         }
+        a:hover {
+          color: vars.$Red;
+          border-color: vars.$Red;
+          transition: all 0.5s;
+        }
       }
       .back__tecnologias {
         margin-top: 8px;
