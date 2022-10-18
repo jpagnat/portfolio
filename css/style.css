@@ -28,6 +28,7 @@ html {
 }
 .header .header__presentation .header__name {
   color: #e31b6d;
+  font-weight: 700;
 }
 .header .header__presentation .header__button {
   text-decoration: none;
