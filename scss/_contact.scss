@@ -36,14 +36,16 @@
       color: vars.$White;
       background-color: vars.$Bg-Contact;
       font-size: 1em;
+      font-weight: 400;
       margin: 4px;
       border: none;
       padding: 8px;
     }
     .form__textarea {
       color: vars.$White;
-      font-family: "Raleway", sans-serif;
       font-size: 1em;
+      font-family: "Raleway", sans-serif;
+      font-weight: 400;
       background-color: vars.$Bg-Contact;
       margin: 4px;
       border: none;

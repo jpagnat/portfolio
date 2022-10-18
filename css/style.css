@@ -54,6 +54,7 @@ html {
   background-color: #252934;
   border-bottom: 4px solid #04c2c9;
   color: #ffffff;
+  font-weight: 700;
 }
 .nav .nav__lista {
   display: flex;
@@ -337,14 +338,16 @@ html {
   color: #ffffff;
   background-color: #1e242c;
   font-size: 1em;
+  font-weight: 400;
   margin: 4px;
   border: none;
   padding: 8px;
 }
 .contact .contact__form .form__textarea {
   color: #ffffff;
-  font-family: "Raleway", sans-serif;
   font-size: 1em;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
   background-color: #1e242c;
   margin: 4px;
   border: none;
