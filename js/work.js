@@ -1,7 +1,7 @@
 const proyectos = [
   {
     title: "Time Cards",
-    img: "./img/proyectos/proyecto2.png",
+    img: "./img/proyectos/proyecto2.avif",
     description: "Proyecto Frontend Mentor",
     back: "Sitio web responsive. Consumo de JSON para renderizar tarjetas",
     page: "https://jpagnat.github.io/time-cards/",
@@ -10,7 +10,7 @@ const proyectos = [
   },
   {
     title: "Card Interactive",
-    img: "./img/proyectos/proyecto3.png",
+    img: "./img/proyectos/proyecto3.avif",
     description: "Proyecto Frontend Mentor",
     back: "Sitio web responsive con formulario dinamico y tarjeta actualizada en tiempo real",
     page: "https://jpagnat.github.io/credit-card/",
@@ -19,7 +19,7 @@ const proyectos = [
   },
   {
     title: "Portfolio v1 ",
-    img: "./img/proyectos/proyecto4.png",
+    img: "./img/proyectos/proyecto4.avif",
     description: "Proyecto Educativo",
     back: "Portfolio personal realizado como proyecto final del curso de Desarrollo Web.",
     page: "https://jpagnat.github.io/portfolio-template/",
@@ -28,7 +28,7 @@ const proyectos = [
   },
   {
     title: "Manage",
-    img: "./img/proyectos/proyecto1.png",
+    img: "./img/proyectos/proyecto1.avif",
     description: "Proyecto Educativo",
     back: "Sitio web informativo realizado como proyecto final de la materia Front End I",
     page: "https://jpagnat.github.io/practiceI/",
