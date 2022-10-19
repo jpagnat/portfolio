@@ -1,5 +1,6 @@
 const $form = document.getElementById("form");
 const $msg = document.getElementById("msg-enviado");
+const $btn = document.querySelector(".form__btn");
 
 $form.addEventListener("submit", handleSubmit);
 
@@ -16,8 +17,17 @@ async function handleSubmit(event) {
   });
 
   if (response.ok) {
-    $msg.classList.remove("hidden");
-    this.reset();
+    const loader = `<div class="loadercontainer">
+        <div class="loadercontainer__carga"></div>
+      </div>`;
+
+    $btn.innerHTML = loader;
+
+    setTimeout(function () {
+      $btn.innerHTML = `<span>Enviar</span>`;
+      $msg.classList.remove("hidden");
+      $form.reset();
+    }, 4000);
   }
 
   setTimeout(function () {
