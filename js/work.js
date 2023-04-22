@@ -1,5 +1,14 @@
 const proyectos = [
   {
+    title: "Dentist React",
+    img: "./img/proyectos/dentist.avif",
+    description: "Proyecto Educativo",
+    back: "Aplicación hecha en React, para gestión de Dentistas",
+    page: "https://dentist-react.vercel.app/",
+    github: "https://github.com/jpagnat/dentist-react",
+    tecnologias: "React, React Hooks",
+  },
+  {
     title: "Time Cards",
     img: "./img/proyectos/proyecto2.avif",
     description: "Proyecto Frontend Mentor",

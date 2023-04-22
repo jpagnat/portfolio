@@ -363,8 +363,7 @@ html {
 .card .content .front {
   background-repeat: no-repeat;
   background-position: center;
-  background-size: contain;
-  background-color: #04c2c9;
+  background-size: cover;
 }
 .card .content .back {
   background: #252934;
